@@ -10,7 +10,7 @@ class EnumConverterApplicationTests {
 	@Autowired EnumOwnerRepository enumOwnerRepository;
 
 	@Test
-	void contextLoads() {
+	void saveAndLoad() {
 
 		EnumOwner saved = enumOwnerRepository.save(new EnumOwner(null, Color.PINK, Direction.ACROSS));
 
